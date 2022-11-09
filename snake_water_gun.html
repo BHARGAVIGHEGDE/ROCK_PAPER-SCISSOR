@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>snake water gun game</title>
+        <body>
+            <script>
+                
+                while(true) {
+                    let a=prompt("enter R for rock,P for paper ,and S for scissors")
+                    var choice= ["R","P","S"]
+                    let choiceIndex = Math.floor(Math.random()*choice.length)
+                    let b=choice[choiceIndex]
+                    
+
+                    if(a==b)
+                        alert("Its draw. Computer chose: " + b)
+                    else if(a=='R'&&b=='P')
+                        alert("You win. Computer chose: " + b)
+
+                    else if(a=='R'&&b=='S')
+                        alert("Computer win. Computer chose: " + b)
+
+                    else if(a=='P'&&b=='R')
+                        alert("You win. Computer chose: " + b)
+
+                    else if(a=='P'&& b=='S')
+                        alert("Computer win. Computer chose: " + b)
+                
+                    else if(a=='S'&&a=='R')
+                        alert("Computer win. Computer chose: " + b)
+
+                    else if(a=='S'&&a=='P')    
+                        alert("You win. Computer chose: " + b)
+                }
+
+
+            </script>
+        </body>
+    </head>
+</html>
